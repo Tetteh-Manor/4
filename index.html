@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Clone Assignment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="logo.png" alt="LinkedIn Logo" class="logo"> <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="nav-right">
+            <button id="dark-mode-btn">Dark Mode</button> </div>
+    </nav>
+
+    <div class="container">
+        
+        <aside class="sidebar-left">
+            <div class="profile-card">
+                <img src="profile.jpg" alt="User Profile" class="avatar"> <h3>Your Name</h3>
+                <p>Web Developer Student</p>
+                <hr>
+                <p>Who viewed your profile: <strong>42</strong></p>
+            </div>
+        </aside>
+
+        <main class="feed">
+            <div class="create-post">
+                <input type="text" id="post-input" placeholder="Start a post">
+                <button id="post-btn">Post</button> </div>
+
+            <article class="post">
+                <div class="post-header">
+                    <img src="company.jpg" alt="Company Logo" class="post-avatar"> <div>
+                        <h4>Tech Company</h4>
+                        <span>2 hours ago</span>
+                    </div>
+                    <button class="follow-btn"> + Follow</button> </div>
+                <div class="post-body">
+                    <p>We are hiring new developers! Check out our website.</p>
+                </div>
+                <div class="post-footer">
+                    <button class="like-btn"><i class="fa-regular fa-thumbs-up"></i> Like</button>
+                    <button>Comment</button>
+                    <button>Share</button>
+                </div>
+            </article>
+        </main>
+
+        <aside class="sidebar-right">
+            <h3>LinkedIn News</h3>
+            <ul>
+                <li>Top trends in tech</li>
+                <li>Coding bootcamp reviews</li>
+                <li>Remote work updates</li>
+            </ul>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
